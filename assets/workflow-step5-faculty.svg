@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow5" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="540" fill="url(#bgGrad5)" rx="16"/>
+
+  <!-- Top App Bar -->
+  <rect x="0" y="0" width="960" height="64" fill="#0b0f19" opacity="0.8"/>
+  <circle cx="48" cy="32" r="14" fill="#4f46e5"/>
+  <path d="M42 32 L46 36 L54 28" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="74" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="18">VisionAttend</text>
+  <rect x="200" y="20" width="160" height="24" rx="12" fill="#312e81"/>
+  <text x="280" y="36" fill="#c7d2fe" font-family="sans-serif" font-weight="600" font-size="11" text-anchor="middle">FACULTY &amp; ADMIN PORTAL</text>
+
+  <!-- Export & Filter Controls -->
+  <rect x="800" y="18" width="112" height="28" rx="8" fill="#059669"/>
+  <text x="856" y="36" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">Export XLSX</text>
+
+  <!-- Header -->
+  <g transform="translate(48, 86)">
+    <rect width="210" height="26" rx="6" fill="#4f46e5" opacity="0.2"/>
+    <text x="12" y="18" fill="#818cf8" font-family="sans-serif" font-weight="700" font-size="11" letter-spacing="1">STEP 5: FACULTY SYNC</text>
+    <text x="0" y="52" fill="#f8fafc" font-family="sans-serif" font-weight="700" font-size="22">Real-Time Verification Feed &amp; Attendance Analytics</text>
+  </g>
+
+  <!-- Live Monitoring Data Table -->
+  <g transform="translate(48, 160)" filter="url(#shadow5)">
+    <rect width="864" height="340" rx="20" fill="url(#cardGrad5)" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Table Title + Live Indicator -->
+    <text x="28" y="36" fill="#f8fafc" font-family="sans-serif" font-weight="700" font-size="16">Live Attendance Log (CSE Department · Section A)</text>
+    <rect x="520" y="18" width="110" height="24" rx="12" fill="#065f46"/>
+    <circle cx="534" cy="30" r="4" fill="#34d399"/>
+    <text x="546" y="34" fill="#a7f3d0" font-family="sans-serif" font-size="11" font-weight="700">FIRESTORE SYNC</text>
+
+    <!-- Table Header Row -->
+    <rect x="20" y="56" width="824" height="34" rx="8" fill="#0f172a"/>
+    <text x="36" y="78" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="700">STUDENT</text>
+    <text x="220" y="78" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="700">ROLL NO</text>
+    <text x="340" y="78" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="700">TIMESTAMP</text>
+    <text x="470" y="78" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="700">BIOMETRICS</text>
+    <text x="590" y="78" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="700">GPS PROXIMITY</text>
+    <text x="730" y="78" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="700">STATUS / ACTION</text>
+
+    <!-- Row 1: Aarav Sharma -->
+    <g transform="translate(20, 102)">
+      <circle cx="24" cy="18" r="14" fill="#3b82f6"/>
+      <text x="24" y="22" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">AS</text>
+      <text x="48" y="22" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Aarav Sharma</text>
+      <text x="200" y="22" fill="#94a3b8" font-family="monospace" font-size="12">CS-2023-041</text>
+      <text x="320" y="22" fill="#cbd5e1" font-family="sans-serif" font-size="12">10:48:12 AM</text>
+      <text x="450" y="22" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="700">91% Match</text>
+      <text x="570" y="22" fill="#cbd5e1" font-family="sans-serif" font-size="12">12.5m (Inside)</text>
+      <rect x="710" y="6" width="94" height="24" rx="6" fill="#065f46"/>
+      <text x="757" y="22" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Verified</text>
+    </g>
+
+    <line x1="28" y1="146" x2="836" y2="146" stroke="#1e293b"/>
+
+    <!-- Row 2: Priya Patel -->
+    <g transform="translate(20, 158)">
+      <circle cx="24" cy="18" r="14" fill="#8b5cf6"/>
+      <text x="24" y="22" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">PP</text>
+      <text x="48" y="22" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Priya Patel</text>
+      <text x="200" y="22" fill="#94a3b8" font-family="monospace" font-size="12">CS-2023-042</text>
+      <text x="320" y="22" fill="#cbd5e1" font-family="sans-serif" font-size="12">10:47:35 AM</text>
+      <text x="450" y="22" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="700">88% Match</text>
+      <text x="570" y="22" fill="#cbd5e1" font-family="sans-serif" font-size="12">8.2m (Inside)</text>
+      <rect x="710" y="6" width="94" height="24" rx="6" fill="#065f46"/>
+      <text x="757" y="22" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Verified</text>
+    </g>
+
+    <line x1="28" y1="202" x2="836" y2="202" stroke="#1e293b"/>
+
+    <!-- Row 3: Rohan Gupta (Flagged / Low Similarity) -->
+    <g transform="translate(20, 214)">
+      <circle cx="24" cy="18" r="14" fill="#f59e0b"/>
+      <text x="24" y="22" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">RG</text>
+      <text x="48" y="22" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Rohan Gupta</text>
+      <text x="200" y="22" fill="#94a3b8" font-family="monospace" font-size="12">CS-2023-043</text>
+      <text x="320" y="22" fill="#cbd5e1" font-family="sans-serif" font-size="12">10:45:04 AM</text>
+      <text x="450" y="22" fill="#f59e0b" font-family="sans-serif" font-size="12" font-weight="700">72% (Review)</text>
+      <text x="570" y="22" fill="#cbd5e1" font-family="sans-serif" font-size="12">24.1m (Inside)</text>
+      <rect x="710" y="6" width="94" height="24" rx="6" fill="#312e81" stroke="#4f46e5"/>
+      <text x="757" y="22" fill="#c7d2fe" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Review</text>
+    </g>
+
+    <line x1="28" y1="258" x2="836" y2="258" stroke="#1e293b"/>
+
+    <!-- Summary Footnote -->
+    <g transform="translate(28, 282)">
+      <text x="0" y="24" fill="#94a3b8" font-family="sans-serif" font-size="12">Class Attendance Today: <tspan fill="#10b981" font-weight="700">46 / 52 Present (88.5%)</tspan> · 5 Unmarked · 1 Under Manual Review</text>
+    </g>
+  </g>
+</svg>

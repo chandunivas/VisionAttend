@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="btnGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="960" height="540" fill="url(#bgGrad1)" rx="16"/>
+
+  <!-- Top App Bar -->
+  <rect x="0" y="0" width="960" height="64" fill="#0b0f19" opacity="0.8"/>
+  <circle cx="48" cy="32" r="14" fill="#4f46e5"/>
+  <path d="M42 32 L46 36 L54 28" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="74" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="18" letter-spacing="0.5">VisionAttend</text>
+  <rect x="200" y="20" width="92" height="24" rx="12" fill="#312e81"/>
+  <text x="246" y="36" fill="#a5b4fc" font-family="sans-serif" font-weight="600" font-size="11" text-anchor="middle">STUDENT</text>
+
+  <!-- Role / Student Info Pill -->
+  <rect x="760" y="18" width="160" height="28" rx="14" fill="#1e293b" stroke="#334155"/>
+  <circle cx="776" cy="32" r="9" fill="#10b981"/>
+  <text x="836" y="37" fill="#e2e8f0" font-family="sans-serif" font-weight="500" font-size="12" text-anchor="middle">Aarav Sharma · 4th Yr</text>
+
+  <!-- Step Badge Banner -->
+  <g transform="translate(48, 86)">
+    <rect width="180" height="26" rx="6" fill="#4f46e5" opacity="0.2"/>
+    <text x="12" y="18" fill="#818cf8" font-family="sans-serif" font-weight="700" font-size="11" letter-spacing="1">STEP 1: STUDENT PORTAL</text>
+    <text x="0" y="52" fill="#f8fafc" font-family="sans-serif" font-weight="700" font-size="22">Dashboard Overview &amp; Attendance Launch</text>
+  </g>
+
+  <!-- Metric Card 1: Attendance Percentage -->
+  <g transform="translate(48, 164)" filter="url(#shadow1)">
+    <rect width="260" height="170" rx="16" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="36" fill="#94a3b8" font-family="sans-serif" font-weight="600" font-size="13">Overall Attendance</text>
+    
+    <!-- Circular Gauge -->
+    <circle cx="70" cy="100" r="42" fill="none" stroke="#1e293b" stroke-width="8"/>
+    <circle cx="70" cy="100" r="42" fill="none" stroke="#10b981" stroke-width="8" stroke-dasharray="264" stroke-dashoffset="40" stroke-linecap="round" transform="rotate(-90 70 100)"/>
+    <text x="70" y="106" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="18" text-anchor="middle">85%</text>
+
+    <text x="135" y="88" fill="#10b981" font-family="sans-serif" font-weight="600" font-size="13">Safe Zone</text>
+    <text x="135" y="108" fill="#94a3b8" font-family="sans-serif" font-size="11">Min Req: 75%</text>
+    <text x="135" y="126" fill="#64748b" font-family="sans-serif" font-size="11">+4.2% this month</text>
+  </g>
+
+  <!-- Metric Card 2: Quick Metrics -->
+  <g transform="translate(328, 164)" filter="url(#shadow1)">
+    <rect width="280" height="170" rx="16" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="36" fill="#94a3b8" font-family="sans-serif" font-weight="600" font-size="13">Semester Sessions</text>
+
+    <!-- Present Stat -->
+    <rect x="24" y="56" width="105" height="84" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="36" y="80" fill="#64748b" font-family="sans-serif" font-size="11">Present</text>
+    <text x="36" y="112" fill="#10b981" font-family="sans-serif" font-weight="800" font-size="24">42</text>
+    <text x="72" y="110" fill="#64748b" font-family="sans-serif" font-size="11">days</text>
+
+    <!-- Absent Stat -->
+    <rect x="145" y="56" width="105" height="84" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="157" y="80" fill="#64748b" font-family="sans-serif" font-size="11">Absent</text>
+    <text x="157" y="112" fill="#ef4444" font-family="sans-serif" font-weight="800" font-size="24">7</text>
+    <text x="182" y="110" fill="#64748b" font-family="sans-serif" font-size="11">days</text>
+  </g>
+
+  <!-- Action Card: Check-In Trigger -->
+  <g transform="translate(628, 164)" filter="url(#shadow1)">
+    <rect width="284" height="170" rx="16" fill="#1e1b4b" stroke="#4338ca" stroke-width="1.5"/>
+    <text x="24" y="36" fill="#c7d2fe" font-family="sans-serif" font-weight="700" font-size="14">Today's Class Session</text>
+    <text x="24" y="58" fill="#94a3b8" font-family="sans-serif" font-size="12">CS401 · Neural Networks (10:00 AM)</text>
+    <text x="24" y="78" fill="#64748b" font-family="sans-serif" font-size="11">Location: Block C - Lab 3</text>
+
+    <!-- Mark Attendance Button -->
+    <rect x="24" y="102" width="236" height="44" rx="10" fill="url(#btnGrad1)"/>
+    <circle cx="48" cy="124" r="8" fill="#ffffff" opacity="0.25"/>
+    <path d="M44 124 L47 127 L53 121" stroke="#ffffff" stroke-width="2" fill="none"/>
+    <text x="142" y="129" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="13" text-anchor="middle">Mark Today Attendance</text>
+  </g>
+
+  <!-- Bottom Panel: Calendar / History Preview -->
+  <g transform="translate(48, 354)" filter="url(#shadow1)">
+    <rect width="864" height="146" rx="16" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1"/>
+    <text x="28" y="32" fill="#e2e8f0" font-family="sans-serif" font-weight="700" font-size="14">Recent Verification Log</text>
+
+    <!-- Table Header -->
+    <text x="28" y="60" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="600">DATE</text>
+    <text x="180" y="60" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="600">COURSE</text>
+    <text x="400" y="60" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="600">BIOMETRIC MATCH</text>
+    <text x="610" y="60" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="600">GEOFENCE</text>
+    <text x="780" y="60" fill="#64748b" font-family="sans-serif" font-size="11" font-weight="600">STATUS</text>
+
+    <!-- Row 1 -->
+    <line x1="28" y1="72" x2="836" y2="72" stroke="#1e293b" stroke-width="1"/>
+    <text x="28" y="94" fill="#cbd5e1" font-family="sans-serif" font-size="12">Oct 18, 2026</text>
+    <text x="180" y="94" fill="#cbd5e1" font-family="sans-serif" font-size="12">CS401 · Neural Nets</text>
+    <text x="400" y="94" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="600">92% Match</text>
+    <text x="610" y="94" fill="#cbd5e1" font-family="sans-serif" font-size="12">14.2m (Inside 100m)</text>
+    <rect x="774" y="80" width="62" height="22" rx="11" fill="#065f46"/>
+    <text x="805" y="95" fill="#6ee7b7" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">VERIFIED</text>
+
+    <!-- Row 2 -->
+    <line x1="28" y1="110" x2="836" y2="110" stroke="#1e293b" stroke-width="1"/>
+    <text x="28" y="130" fill="#cbd5e1" font-family="sans-serif" font-size="12">Oct 17, 2026</text>
+    <text x="180" y="130" fill="#cbd5e1" font-family="sans-serif" font-size="12">CS405 · Distributed Sys</text>
+    <text x="400" y="130" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="600">89% Match</text>
+    <text x="610" y="130" fill="#cbd5e1" font-family="sans-serif" font-size="12">8.7m (Inside 100m)</text>
+    <rect x="774" y="117" width="62" height="22" rx="11" fill="#065f46"/>
+    <text x="805" y="132" fill="#6ee7b7" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">VERIFIED</text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "name": "Remix College Activity \u0026 Facial Attendance System",
+  "description": "A high-fidelity college portal with GPS-enabled facial recognition attendance via Gemini AI, real-time faculty sync, and advanced branch performance analytics.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

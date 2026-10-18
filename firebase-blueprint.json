@@ -1,0 +1,103 @@
+{
+  "entities": {
+    "StudentProfile": {
+      "title": "students",
+      "description": "Student Profile Registration",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "firstName": { "type": "string" },
+        "middleName": { "type": "string" },
+        "lastName": { "type": "string" },
+        "dob": { "type": "string" },
+        "email": { "type": "string" },
+        "mobile": { "type": "string" },
+        "branch": { "type": "string" },
+        "semester": { "type": "string" },
+        "backlogs": { "type": "integer" },
+        "feesTotal": { "type": "integer" },
+        "feesPaid": { "type": "integer" },
+        "feesRemaining": { "type": "integer" },
+        "feesStatus": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "facultyName": { "type": "string" },
+        "motherName": { "type": "string" },
+        "fatherName": { "type": "string" },
+        "motherNumber": { "type": "string" },
+        "fatherNumber": { "type": "string" },
+        "gender": { "type": "string" },
+        "createdAt": { "type": "integer" }
+      },
+      "required": ["id", "firstName", "lastName", "email", "mobile", "branch", "semester", "backlogs", "feesTotal", "feesPaid", "feesRemaining", "feesStatus", "photoUrl", "facultyName", "createdAt"]
+    },
+    "Account": {
+      "title": "accounts",
+      "description": "Student Account Credentials",
+      "type": "object",
+      "properties": {
+        "password": { "type": "string" }
+      },
+      "required": ["password"]
+    },
+    "Faculty": {
+      "title": "faculties",
+      "description": "Faculty Incharge Credentials",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "branch": { "type": "string" },
+        "password": { "type": "string" }
+      },
+      "required": ["id", "name", "branch", "password"]
+    },
+    "AttendanceRecord": {
+      "title": "attendance",
+      "description": "Student Attendance Records",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "studentId": { "type": "string" },
+        "studentName": { "type": "string" },
+        "branch": { "type": "string" },
+        "date": { "type": "string" },
+        "timestamp": { "type": "integer" },
+        "status": { "type": "string" },
+        "gps": {
+          "type": "object",
+          "properties": {
+            "latitude": { "type": "number" },
+            "longitude": { "type": "number" },
+            "accuracy": { "type": "number" },
+            "bypassed": { "type": "boolean" }
+          },
+          "required": ["latitude", "longitude"]
+        },
+        "verificationConfidence": { "type": "integer" },
+        "selfieBase64": { "type": "string" },
+        "livenessPassed": { "type": "boolean" },
+        "livenessChallenge": { "type": "string" },
+        "livenessDetails": { "type": "string" }
+      },
+      "required": ["id", "studentId", "studentName", "branch", "date", "timestamp", "status", "gps", "verificationConfidence", "selfieBase64"]
+    }
+  },
+  "firestore": {
+    "students": {
+      "schema": "StudentProfile",
+      "description": "Profiles of registered college students"
+    },
+    "accounts": {
+      "schema": "Account",
+      "description": "Passwords of registered college students"
+    },
+    "faculties": {
+      "schema": "Faculty",
+      "description": "Profiles and credentials of college faculty coordinators"
+    },
+    "attendance": {
+      "schema": "AttendanceRecord",
+      "description": "Face-verified and GPS/liveness verified daily attendance logs"
+    }
+  }
+}

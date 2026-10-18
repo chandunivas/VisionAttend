@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="540" fill="url(#bgGrad3)" rx="16"/>
+
+  <!-- Top App Bar -->
+  <rect x="0" y="0" width="960" height="64" fill="#0b0f19" opacity="0.8"/>
+  <circle cx="48" cy="32" r="14" fill="#4f46e5"/>
+  <path d="M42 32 L46 36 L54 28" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="74" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="18">VisionAttend</text>
+  <rect x="200" y="20" width="140" height="24" rx="12" fill="#065f46"/>
+  <text x="270" y="36" fill="#6ee7b7" font-family="sans-serif" font-weight="600" font-size="11" text-anchor="middle">BIOMETRIC ENGINE</text>
+
+  <!-- Header -->
+  <g transform="translate(48, 86)">
+    <rect width="190" height="26" rx="6" fill="#4f46e5" opacity="0.2"/>
+    <text x="12" y="18" fill="#818cf8" font-family="sans-serif" font-weight="700" font-size="11" letter-spacing="1">STEP 3: MATCH &amp; AUDIT</text>
+    <text x="0" y="52" fill="#f8fafc" font-family="sans-serif" font-weight="700" font-size="22">Dual-Condition Biometric &amp; Geofence Verification</text>
+  </g>
+
+  <!-- Side-by-side Face Comparison -->
+  <g transform="translate(48, 160)" filter="url(#shadow3)">
+    <rect width="440" height="340" rx="20" fill="url(#cardGrad3)" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Left Box: Registered Reference Photo -->
+    <g transform="translate(24, 28)">
+      <rect width="180" height="220" rx="14" fill="#0f172a" stroke="#475569"/>
+      <ellipse cx="90" cy="90" rx="42" ry="54" fill="#334155"/>
+      <circle cx="90" cy="74" r="26" fill="#475569"/>
+      <path d="M60 134 Q90 114 120 134" stroke="#64748b" stroke-width="3" fill="none"/>
+      
+      <rect x="16" y="180" width="148" height="26" rx="6" fill="#1e293b"/>
+      <text x="90" y="197" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">REGISTERED PHOTO</text>
+    </g>
+
+    <!-- Center Match Badge -->
+    <circle cx="220" cy="138" r="24" fill="#4f46e5" stroke="#818cf8" stroke-width="2"/>
+    <text x="220" y="142" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="11" text-anchor="middle">VS</text>
+
+    <!-- Right Box: Live Captured Selfie -->
+    <g transform="translate(236, 28)">
+      <rect width="180" height="220" rx="14" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+      <ellipse cx="90" cy="90" rx="42" ry="54" fill="#334155"/>
+      <circle cx="90" cy="74" r="26" fill="#475569"/>
+      <path d="M60 134 Q90 114 120 134" stroke="#10b981" stroke-width="3" fill="none"/>
+      
+      <!-- Real-time Scan Grid overlay -->
+      <line x1="48" y1="50" x2="132" y2="50" stroke="#10b981" stroke-dasharray="2 2" stroke-width="1.5"/>
+      <line x1="48" y1="74" x2="132" y2="74" stroke="#10b981" stroke-dasharray="2 2" stroke-width="1.5"/>
+      <line x1="48" y1="98" x2="132" y2="98" stroke="#10b981" stroke-dasharray="2 2" stroke-width="1.5"/>
+      
+      <rect x="16" y="180" width="148" height="26" rx="6" fill="#065f46"/>
+      <text x="90" y="197" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">LIVE WEBCAM SELFIE</text>
+    </g>
+
+    <!-- Overall Similarity Score Bar -->
+    <g transform="translate(24, 268)">
+      <text x="0" y="16" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="700">Biometric Similarity Score</text>
+      <text x="392" y="16" fill="#10b981" font-family="sans-serif" font-size="16" font-weight="800" text-anchor="end">91% MATCH</text>
+      
+      <!-- Progress Track -->
+      <rect y="26" width="392" height="14" rx="7" fill="#0f172a"/>
+      <rect y="26" width="356" height="14" rx="7" fill="#10b981"/>
+      <line x1="294" y1="22" x2="294" y2="44" stroke="#f59e0b" stroke-width="2"/>
+      <text x="294" y="56" fill="#f59e0b" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">75% Threshold</text>
+    </g>
+  </g>
+
+  <!-- Right: Technical Breakdown Bars -->
+  <g transform="translate(512, 160)" filter="url(#shadow3)">
+    <rect width="400" height="340" rx="20" fill="url(#cardGrad3)" stroke="#334155" stroke-width="1.5"/>
+
+    <text x="28" y="36" fill="#f8fafc" font-family="sans-serif" font-weight="700" font-size="15">Biometric Feature Analysis</text>
+    <text x="28" y="56" fill="#94a3b8" font-family="sans-serif" font-size="12">Structural gradient &amp; luminance vectors</text>
+
+    <!-- Parameter 1: Forehead & Luminance -->
+    <g transform="translate(28, 76)">
+      <text x="0" y="14" fill="#cbd5e1" font-family="sans-serif" font-size="12">Forehead &amp; Upper Facial Luminance</text>
+      <text x="344" y="14" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="end">PASS · 94%</text>
+      <rect y="22" width="344" height="8" rx="4" fill="#0f172a"/>
+      <rect y="22" width="323" height="8" rx="4" fill="#10b981"/>
+    </g>
+
+    <!-- Parameter 2: Nose Contour Gradient (dy) -->
+    <g transform="translate(28, 126)">
+      <text x="0" y="14" fill="#cbd5e1" font-family="sans-serif" font-size="12">Nose Ridge Contour (dy gradient)</text>
+      <text x="344" y="14" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="end">PASS · 88%</text>
+      <rect y="22" width="344" height="8" rx="4" fill="#0f172a"/>
+      <rect y="22" width="302" height="8" rx="4" fill="#10b981"/>
+    </g>
+
+    <!-- Parameter 3: Lips & Jawline Structure (dx) -->
+    <g transform="translate(28, 176)">
+      <text x="0" y="14" fill="#cbd5e1" font-family="sans-serif" font-size="12">Lip Curvature &amp; Jawline (dx gradient)</text>
+      <text x="344" y="14" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="end">PASS · 90%</text>
+      <rect y="22" width="344" height="8" rx="4" fill="#0f172a"/>
+      <rect y="22" width="310" height="8" rx="4" fill="#10b981"/>
+    </g>
+
+    <!-- Parameter 4: Geofence Validation -->
+    <g transform="translate(28, 226)">
+      <text x="0" y="14" fill="#cbd5e1" font-family="sans-serif" font-size="12">GPS Proximity (&lt; 100m Allowed Radius)</text>
+      <text x="344" y="14" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="end">12.5m (PASS)</text>
+      <rect y="22" width="344" height="8" rx="4" fill="#0f172a"/>
+      <rect y="22" width="300" height="8" rx="4" fill="#3b82f6"/>
+    </g>
+
+    <!-- Overall Audit Result Pill -->
+    <g transform="translate(28, 276)">
+      <rect width="344" height="42" rx="10" fill="#064e3b" stroke="#059669"/>
+      <circle cx="24" cy="21" r="8" fill="#10b981"/>
+      <path d="M20 21 L23 24 L29 18" stroke="#ffffff" stroke-width="2" fill="none"/>
+      <text x="42" y="25" fill="#a7f3d0" font-family="sans-serif" font-size="12" font-weight="700">Both Conditions Met: Attendance Approved</text>
+    </g>
+  </g>
+</svg>
